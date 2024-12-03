@@ -27,7 +27,7 @@ const UserNavbar = ({ className }) => {
                     <Link href="https://www.linkedin.com/in/kyaw-zin-thein-98007b252">
                         <Image src="/userHome/linkenin.jpg" width={55} height={55} className={styles.icon1}/>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kyaw-zin-thein-98007b252/">
+                    <Link href="https://drive.google.com/file/d/15SnkABvQpPNNhAdArKFxr7pGrG_r8pcV/view?usp=sharinghttps://drive.google.com/file/d/15SnkABvQpPNNhAdArKFxr7pGrG_r8pcV/view?usp=sharing">
                         <Image src="/userHome/resume1con.png" width={55} height={55} className={styles.icon2}/>
                     </Link>
                 </div>
