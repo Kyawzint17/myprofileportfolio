@@ -163,39 +163,47 @@
         flex-direction: column;
         align-items: center;
         margin-top: 80px;
-        padding: 0 10px; /* Add some padding */
+        padding: 0 10px; 
     }
     
     .intro {
-        font-size: 1rem; /* Smaller font size for mobile */
-        max-width: 100%; /* Full width */
-        padding: 0 15px; /* Add horizontal padding */
-        text-align: center; /* Center text */
+        font-size: 1rem; 
+        max-width: 100%; 
+        padding: 0 15px; 
+        text-align: center; 
+    }
+
+    .intro h1 {
+        font-size: 23.2px;
+        
+    }
+    .intro p {
+        margin-top: 10px;
     }
 
     .triangleContainer {
-        margin: 0; /* Remove left margin */
-        align-items: center; /* Center items */
+        margin: 0; 
+        align-items: center; 
     }
     
     .triangle {
-        border-left: 120px solid transparent; /* Reduce size */
-        border-right: 120px solid transparent; /* Reduce size */
-        border-bottom: 200px solid #3583F9; /* Reduce size */
-        margin-top: 30px; /* Adjust margin */
+        border-left: 120px solid transparent; 
+        border-right: 120px solid transparent;
+        border-bottom: 200px solid #3583F9;
+        margin-top: 30px; 
     }
     
     .imageAboveTriangle {
-        width: 200px; /* Smaller image */
-        height: 200px; /* Smaller image */
-        top: 80px; /* Adjust positioning */
+        width: 200px; 
+        height: 200px; 
+        top: 80px; 
     }
 
     .fixedArrow {
-        bottom: 20px; /* Adjust bottom position */
-        right: 20px; /* Adjust right position */
-        width: 40px; /* Smaller arrow */
-        height: 40px; /* Smaller arrow */
+        bottom: 20px; 
+        right: 20px; 
+        width: 40px; 
+        height: 40px;
     }
     
     .background section {
@@ -241,7 +249,7 @@
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 10px;
-    color: #738088c1 !important; /* Replace with any color value you prefer */
+    color: #738088c1 !important; 
 }
 
 .skillIntro p {
@@ -251,7 +259,7 @@
 /* Display expertisection in row */
 .expertisection {
     display: flex;
-    flex-direction: row; /* Align sections in a row */
+    flex-direction: row; 
     justify-content: space-between;
     gap: 50px;
     margin-top: 50px;
@@ -260,13 +268,13 @@
 /* Display each section's squares in a column */
 .section1, .section2 {
     display: flex;
-    flex-direction: column; /* Align squares vertically */
-    gap: 10px; /* Optional: Adds space between squares */
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .square1, .square2, .square3, .square4 {
-    width: 600px; /* Adjust width */
-    height: 300px; /* Adjust height */
+    width: 600px; 
+    height: 300px; 
     border: 5px solid #0977CE; /* Blue border */
     border-radius: 50px; /* Rounded corners */
     display: flex;
@@ -278,8 +286,8 @@
 .Stitle {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centers items horizontally */
-    gap: 30px;           /* Adds space between elements */
+    align-items: center; 
+    gap: 30px;           
     color: black;
     margin: 0 auto;
     margin-right: 125px;
@@ -296,17 +304,17 @@
 }
 
 .SIcon1 {
-    border-radius: 10%; /* Makes the image circular */
-    overflow: hidden; /* Ensures the image fits inside the circle */
-    object-fit: cover; /* Ensures the image scales correctly within the circle */
+    border-radius: 10%; 
+    overflow: hidden; 
+    object-fit: cover; 
     margin-bottom: 10px;
 }
 
 .Stitle1 {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centers items horizontally */
-    gap: 30px;           /* Adds space between elements */
+    align-items: center; 
+    gap: 30px;           
     color: black;
     margin: 0 auto;
     margin-right: 180px;
@@ -326,64 +334,64 @@
 
 @media screen and (min-width: 2560px) {
     .skill {
-        margin-top: 300px; /* Increase spacing for large screens */
-        animation: slideUp 1.2s ease-in-out forwards; /* Slightly longer animation for larger screens */
+        margin-top: 300px; 
+        animation: slideUp 1.2s ease-in-out forwards; 
     }
 
     .skillIntro h2 {
-        font-size: 30px; /* Increase font size for better visibility */
+        font-size: 30px; 
         margin-bottom: 15px;
     }
 
     .skillIntro p {
-        font-size: 60px; /* Larger size for heading */
+        font-size: 60px; 
     }
 
     .expertisection {
-        gap: 70px; /* Increase spacing between sections */
-        margin-top: 60px; /* Adjust vertical spacing */
+        gap: 70px; 
+        margin-top: 60px; 
     }
 
     .square1, .square2, .square3, .square4 {
-        width: 700px; /* Larger width for boxes */
-        height: 350px; /* Larger height for boxes */
-        border: 6px solid #0977CE; /* Slightly thicker border */
-        border-radius: 60px; /* More rounded corners */
+        width: 700px; 
+        height: 350px; 
+        border: 6px solid #0977CE; 
+        border-radius: 60px; 
     }
 
     .Stitle {
-        gap: 40px; /* Increase space between title elements */
-        margin-right: 150px; /* Adjust alignment for larger screens */
-        font-size: 30px; /* Increase font size */
+        gap: 40px; 
+        margin-right: 150px; 
+        font-size: 30px; 
     }
 
     .Stitle1 {
-        gap: 40px; /* Increase space between title elements */
-        margin-right: 200px; /* Adjust alignment for larger screens */
-        font-size: 30px; /* Increase font size */
+        gap: 40px; 
+        margin-right: 200px; 
+        font-size: 30px; 
     }
 
     .Sparagraph {
-        max-width: 75%; /* Widen text area for readability */
-        font-size: 22px; /* Slightly larger font for readability */
+        max-width: 75%; 
+        font-size: 22px; 
     }
 
     .SIcon, .SIcon1 {
-        width: 120px; /* Adjust icon size */
-        height: 120px; /* Adjust icon size */
+        width: 120px; 
+        height: 120px; 
     }
 }
 
 /* From 1024px to 768px: Change to column layout on smaller screens */
 @media (max-width: 1024px) {
     .expertisection {
-        flex-direction: column; /* Stack sections vertically */
+        flex-direction: column; 
         align-items: center;
         gap: 30px;
     }
 
     .square1, .square2, .square3, .square4 {
-        width: 90%; /* Adjust to fit within the screen */
+        width: 90%;
         height: auto;
     }
 }
@@ -391,15 +399,71 @@
 /* From 768px to 425px: Adjust for smaller screens */
 @media (max-width: 768px) {
     .expertisection {
-        gap: 25px; /* Add spacing between elements */
+        gap: 25px; 
+    }
+
+    .SIcon {
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 /* Mobile adjustments for 425px to 320px */
 @media (max-width: 425px) {
     .square1, .square2, .square3, .square4 {
-        width: 90%; /* Adjust width */
-        height: 130px; /* Make it more compact */
+        width: 100%; 
+        height: 150px; 
+    }
+
+    .Stitle {
+        font-size: 18px; 
+        margin-bottom: 1px; 
+        gap: 15px; 
+        margin-right: 20px; 
+    }
+
+    .Stitle1 {
+        font-size: 18px; 
+        margin-bottom: 1px; 
+        gap: 15px; 
+        margin-right: 50px; 
+    }
+
+    .SIcon {
+        width: 40px; 
+        height: 40px;
+        margin-left: 20px; 
+    }
+
+    .SIcon1 {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .Sparagraph {
+        font-size: 15px; 
+        max-width: 90%; 
+    }
+
+    .Stitle, .Stitle1 h3 {
+        font-size: 18px; 
+        margin-left: 10px;
+    }
+
+    .skillIntro h2 {
+        font-size: 14px; /* Adjust heading size */
+    }
+
+    .skillIntro p {
+        font-size: 20px; /* Smaller paragraph size */
+    }
+}
+
+@media (max-width: 320px) {
+    .square1, .square2, .square3, .square4 {
+        width: 100%; /* Adjust width */
+        height: 150px; /* Make it more compact */
     }
 
     .Stitle {
@@ -417,8 +481,8 @@
     }
 
     .SIcon {
-        width: 25px; /* Smaller icon size */
-        height: 25px; /* Adjust height */
+        width: 30px; /* Smaller icon size */
+        height: 30px; /* Adjust height */
     }
 
     .SIcon1 {
@@ -427,20 +491,20 @@
     }
 
     .Sparagraph {
-        font-size: 12px; /* Smaller text */
+        font-size: 14px; /* Smaller text */
         max-width: 90%; /* Use available space */
     }
 
     .Stitle, .Stitle1 h3 {
-        font-size: 14px; /* Adjust heading size */
+        font-size: 14.5px; /* Adjust heading size */
     }
 
     .skillIntro h2 {
-        font-size: 14px; /* Adjust heading size */
+        font-size: 16px; /* Adjust heading size */
     }
 
     .skillIntro p {
-        font-size: 20px; /* Smaller paragraph size */
+        font-size: 25px; /* Smaller paragraph size */
     }
 }
 
@@ -549,15 +613,15 @@
 
 .techIcon1 {
     display: flex;
-    flex-direction: column; /* Stack the image and text vertically */
-    align-items: center; /* Center-align image and text */
-    border: 2px solid #3583F9; /* Blue border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px; /* Add padding inside the border */
-    width: 120px; /* Adjust width as needed */
-    text-align: center; /* Center-align text */
-    transition: transform 0.3s ease; /* Add hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    flex-direction: column; 
+    align-items: center; 
+    border: 2px solid #3583F9; 
+    border-radius: 10px; 
+    padding: 10px; 
+    width: 120px; 
+    text-align: center; 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .techIcon1:hover {
@@ -567,36 +631,36 @@
 
 .techIcon2 {
     display: flex;
-    flex-direction: column; /* Stack the image and text vertically */
-    align-items: center; /* Center-align image and text */
+    flex-direction: column; 
+    align-items: center; 
     border: 2px solid #3583F9; /* Blue border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px; /* Add padding inside the border */
-    width: 120px; /* Adjust width as needed */
-    text-align: center; /* Center-align text */
+    border-radius: 10px; 
+    padding: 10px; 
+    width: 120px; 
+    text-align: center; 
     transition: transform 0.3s ease; /* Add hover effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
 
 .techIcon2:hover {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .techIcon1 div{
-    margin-top: 10px; /* Space between the image and text */
-    font-size: 1rem; /* Adjust font size */
+    margin-top: 10px; 
+    font-size: 1rem; 
     font-weight: bold;
      /* font-weight: bold; Make the text bold */
-    color: #333; /* Text color */
+    color: #333; 
 }
 
 .techIcon2 div{
-    margin-top: 10px; /* Space between the image and text */
-    font-size: 1rem; /* Adjust font size */
+    margin-top: 10px;
+    font-size: 1rem; 
     font-weight: bold;
     /* font-weight: bold; Make the text bold */
-    color: #333; /* Text color */
+    color: #333; 
 }
 
 .techIcon2 p {
@@ -606,10 +670,10 @@
 }
 
 .circle {
-    border: 2px solid #e3e5e97a; /* Blue border color */
-    padding: 10px; /* Add padding inside the element */
-    border-radius: 50%; /* Optional: Rounded corners */
-    text-align: center; /* Center the text or content inside the element */
+    border: 2px solid #e3e5e97a; 
+    padding: 10px; 
+    border-radius: 50%; 
+    text-align: center; 
 }
 
 /* Responsive styles */
@@ -618,103 +682,114 @@
 @media screen and (min-width: 2560px) {
     .about {
         margin-top: 300px;
-        max-width: 1400px; /* Increase maximum width for large displays */
+        max-width: 1400px; 
         margin-left: auto;
         margin-right: auto; /* Center align for better large-screen design */
     }
 
     .tech {
-        gap: 50px; /* Increase spacing between columns */
+        gap: 50px;
     }
 
     .techStack,
     .techTool {
-        width: 40%; /* Slightly larger width for sections */
+        width: 40%; 
     }
 
     .techSet {
-        gap: 30px; /* Add more space between icons */
+        gap: 30px;
     }
 
     .techIcon1,
     .techIcon2 {
-        width: 140px; /* Increase size of icons */
-        padding: 15px; /* Add more padding for larger icons */
+        width: 140px; 
+        padding: 15px; 
     }
 
     .techIcon1 div,
     .techIcon2 div {
-        font-size: 1.2rem; /* Increase font size for readability */
+        font-size: 1.2rem; 
     }
 
     .techTitle1,
     .techTitle2 {
-        font-size: 2rem; /* Larger titles for high-resolution screens */
+        font-size: 2rem; 
     }
 }
 
 @media screen and (max-width: 1200px) {
     .about {
         margin-top: 200px;
-        max-width: 95%; /* Adjust width for smaller screens */
+        max-width: 95%; 
     }
 
     .tech {
-        flex-direction: column; /* Stack the techStack and techTool vertically */
-        align-items: center; /* Center align the tech sections */
-        gap: 30px; /* Increase gap for better spacing */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px; 
     }
 
     .techStack,
     .techTool {
-        width: 100%; /* Make each section full width */
+        width: 100%; 
     }
 }
 
 @media screen and (max-width: 768px) {
+
     .techSet {
-        flex-wrap: wrap; /* Allow wrapping of icons */
-        justify-content: center; /* Center the icons */
-        gap: 15px; /* Adjust gap for smaller spacing */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
     }
 
     .techIcon1,
     .techIcon2 {
-        width: 100px; /* Reduce size of icons for smaller screens */
+        width: 100px; 
         padding: 8px;
     }
 
     .techIcon1 div,
     .techIcon2 div {
-        font-size: 0.9rem; /* Reduce font size for smaller screens */
+        font-size: 0.9rem; 
     }
 }
 
 @media screen and (max-width: 480px) {
+    .aboutMe h3 {
+        font-size: 30px;
+    }
+    
+    .aboutMe p {
+        font-size: 15px;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
     .techTitle1,
     .techTitle2 {
-        font-size: 1.2rem; /* Adjust title size for mobile */
+        font-size: 1.2rem; 
     }
 
     .techSet,
     .techSet2 {
-        gap: 10px; /* Reduce spacing further */
-        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+        gap: 10px; 
+        flex-wrap: wrap; 
         justify-content: center; /* Center the icons to prevent overflowing */
     }
 
     .techTool,
     .techStack {
-        width: 100%; /* Take full width for better layout on small screens */
-        margin: 0 auto; /* Center-align the columns */
+        width: 100%; 
+        margin: 0 auto; 
     }
 
     .techIcon1,
     .techIcon2 {
-        width: 90px; /* Reduce icon size for smaller devices */
-        height: auto; /* Ensure icons scale properly */
+        width: 90px; 
+        height: auto; 
         padding: 5px;
-        border-radius: 8px; /* Adjust corner rounding */
+        border-radius: 8px; 
     }
 
     .techIcon1 div,
