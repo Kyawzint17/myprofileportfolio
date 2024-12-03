@@ -1,0 +1,173 @@
+/* USER NAV BAR CSS */
+.navBar {
+    padding: 15px 10px;
+    background-color: #3583F9; /* Apply background immediately */
+    animation: slideDown 1s ease-in-out forwards; /* Ensures the final state persists */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar above other elements */
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+/* navbar.module.css */
+.navVisible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+/* For hidden navbar */
+.navHidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.topArrow {
+    margin-left: 5px;
+    border-radius: 30px; /* Optional: Rounded corners */
+    padding: 5px; /* Optional: Space between the image and border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 400px; /* Adjust spacing between image and button as needed */
+}
+
+.button {
+    margin-left: 10px; /* Adds space between buttons */
+    padding: 10px 20px;
+    color: rgb(254, 254, 254); /* Initial text color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    text-decoration: none; /* No underline initially */
+    font-size: 22.2px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px; /* Add space between letters */
+    text-transform: uppercase; /* Uppercase letters */
+    transition: background-color 0.3s, transform 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust as needed */
+    height: 2px; /* Adjust as needed */
+    background-color: #ffffff; /* Underline color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button:hover::after {
+    transform: scaleX(1);
+}
+
+.button:hover {
+    color: rgb(255, 255, 255); /* Change font color on hover */
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-left: 240px;
+}
+
+.icon1 {
+    margin-right: 10px; /* Adds space between the image and the text */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Hides any overflow */
+    border: 2px solid white; /* Optional: Add a border */
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);  Optional: Add a soft shadow */
+}
+
+.icon2 {
+    margin-left: 20px; /* Adds space between the image and the text */
+    border: 2px solid white; /* Set the border width and color */
+    border-radius: 50%; /* Optional: Rounded corners */
+    padding: 5px; /* Optional: Space between the image and border */
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); Optional: Soft shadow effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Intro entrance animation */
+@keyframes slideDown {
+    0% {
+        opacity: 0;  /* Becomes visible as the animation starts */
+        transform: translateY(-100%); /* Start off-screen above */
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 985px) {
+    .navBar{
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .navContent {
+        margin-left: 150px; /* Adjust margin to reduce space */
+    }
+
+    .buttonContainer {
+        margin-left: 250px; /* Adjust button container spacing */
+    }
+
+    .button {
+        font-size: 18px; /* Decrease font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    .iconContainer {
+        margin-left: 180px; /* Adjust icon container spacing */
+    }
+
+    .SIcon, .SIcon1 {
+        width: 25px; /* Reduce icon size */
+        height: 25px; /* Adjust icon height */
+    }
+}
+
+@media (max-width: 1024px) {
+    .navContent {
+        margin-left: 10px; /* Reduce left margin */
+    }
+
+    .buttonContainer {
+        margin-left: 145px; /* Adjust spacing between buttons */
+    }
+
+    .button {
+        font-size: 16px; /* Reduce font size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+
+    .iconContainer {
+        margin-left: 150px; /* Adjust icon spacing */
+    }
+
+    .SIcon, .SIcon1 {
+        width: 22px; /* Decrease icon size */
+        height: 22px; /* Adjust icon height */
+    }
+}
+

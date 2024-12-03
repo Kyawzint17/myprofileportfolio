@@ -1,0 +1,265 @@
+/* USER NAV BAR CSS */
+.navBar {
+    padding: 15px 10px;
+    background-color: #3583F9; /* Apply background immediately */
+    animation: slideDown 1s ease-in-out forwards; /* Ensures the final state persists */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar above other elements */
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.topArrow {
+    margin-left: 5px;
+    border-radius: 30px; /* Optional: Rounded corners */
+    padding: 5px; /* Optional: Space between the image and border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 400px; /* Adjust spacing between image and button as needed */
+}
+
+.button {
+    margin-left: 10px; /* Adds space between buttons */
+    padding: 10px 20px;
+    color: rgb(254, 254, 254); /* Initial text color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    text-decoration: none; /* No underline initially */
+    font-size: 22.2px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px; /* Add space between letters */
+    text-transform: uppercase; /* Uppercase letters */
+    transition: background-color 0.3s, transform 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust as needed */
+    height: 2px; /* Adjust as needed */
+    background-color: #ffffff; /* Underline color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.button:hover::after {
+    transform: scaleX(1);
+}
+
+.button:hover {
+    color: rgb(255, 255, 255); /* Change font color on hover */
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    margin-left: 240px;
+}
+
+.icon1 {
+    margin-right: 10px; /* Adds space between the image and the text */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Hides any overflow */
+    border: 2px solid white; /* Optional: Add a border */
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);  Optional: Add a soft shadow */
+}
+
+.icon2 {
+    margin-left: 20px; /* Adds space between the image and the text */
+    border: 2px solid white; /* Set the border width and color */
+    border-radius: 50%; /* Optional: Rounded corners */
+    padding: 5px; /* Optional: Space between the image and border */
+     /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); Optional: Soft shadow effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Intro entrance animation */
+@keyframes slideDown {
+    0% {
+        opacity: 0;  /* Becomes visible as the animation starts */
+        transform: translateY(-100%); /* Start off-screen above */
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Triangle Container entrance animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide in from the right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px); /* Start slightly off-screen to the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to original position */
+    }
+}
+
+/* USERHOME CSS */
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+    background-color: rgb(255, 255, 255); /* Background color */
+}
+
+.background section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.background section h2,
+.background section p {
+    color: black; /* Change text color to black */
+}
+
+/* INTRO SECTION */
+.profile {
+    margin-top: 150px;
+    display: flex;
+    align-items: center; /* Center vertically if needed */
+    gap: 20px; /* Adjust spacing between intro and image */
+}
+
+.intro {
+    margin-left: 250px;
+    margin-top: 50px;
+    max-width: 40%; /* Adjust to control the width of the intro text */
+    font-size: 30px;
+    animation: slideIn 1s ease-in-out forwards; /* Ensure animation persists */
+}
+
+.intro h1, .intro p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px; /* Add space between letters */
+}
+
+.triangleContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image above the triangle */
+    margin-left: 80px;
+    margin-top: -20px;
+    animation: slideInRight 1s ease-in-out forwards; /* Ensure animation persists */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent; /* Adjust triangle size */
+    border-right: 300px solid transparent;
+    border-bottom: 500px solid #3583F9; /* Triangle color */
+    margin-top: 100px; /* Adjust spacing above triangle */
+}
+
+.imageAboveTriangle {
+    position: absolute;
+    top: 200px; /* Adjust to center image above triangle */
+    width: 450px; /* Adjust image size */
+    height: 450px;
+    border-radius: 50%; /* Make image circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
+}
+
+.fixedArrow {
+    position: fixed;
+    bottom: 50px; /* Adjust as needed */
+    right: 60px; /* Adjust as needed */
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: opacity 0.3s ease; /* Optional smooth fade-in and fade-out */
+}
+
+.fixedArrow:hover {
+    opacity: 0.7; /* Optional: make it slightly transparent on hover */
+}
+
+/* SKILL SECTION */
+.skill {
+    margin-top: 280px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) { /* For tablets and smaller screens */
+    .navContent {
+        margin-left: 5%; /* Reduce margin for smaller screens */
+    }
+
+    .buttonContainer {
+        margin-left: 10px; /* Center buttons on smaller screens */
+    }
+
+}
+
+@media (max-width: 768px) { /* screen and (min-width: 2000px) For mobile devices */
+    .navContent {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center align */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .topArrow {
+        margin-bottom: 10px; /* Space below the logo */
+    }
+
+    .buttonContainer {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 5px; /* Reduce gap between buttons */
+    }
+
+    .button {
+        font-size: 18px; /* Reduce font size for smaller screens */
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .iconContainer {
+        margin-top: 10px; /* Space above icons */
+        gap: 5px; /* Reduce gap between icons */
+    }
+
+    .icon1, .icon2 {
+        width: 40px; /* Reduce icon size */
+        height: 40px; /* Maintain aspect ratio */
+    }
+    
+    .buttonContainer {
+        margin-left: 0; /* Center buttons */
+        margin-top: 10px; /* Add some space above buttons */
+    }
+
+}
