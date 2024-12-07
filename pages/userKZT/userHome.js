@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from '@/styles/user.module.css';
 import nav from '@/styles/navbar.module.css';
 import UserNavbar from '@/components/userNavbar';
+import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head'; 
 
@@ -225,7 +226,96 @@ export default function userHome() {
                 </div>
                 <div className={styles.project}>
                     <section id="projects">
-
+                        <div className={styles.projectIntro}>
+                            <h2 className={styles.Ptitle}>
+                                All Projects
+                            </h2>
+                            <a href="https://github.com/Kyawzint17">
+                                <div className={styles.moreInfo}>
+                                    <div>
+                                        My GitHub
+                                    </div>
+                                    <Image src="/project/github.jpg" width={50} height={50} className={styles.githubCircle}/>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div className={styles.projectS}>
+                            <div className={styles.projectContainer}>
+                                <div className={styles.imageWrapper}>
+                                    <Image 
+                                        src="/project/camelsrescafe.jpg" 
+                                        alt="Camels Cafe & Restaurant" 
+                                        className={styles.projectImage}
+                                        layout="fill" 
+                                        objectFit="cover"
+                                    />
+                                </div>
+                                <div className={styles.projectInfo}>
+                                    <h2>Camels Cafe & Restaurant</h2>
+                                    <h3>Booking Tent System</h3>
+                                    <h4>Non-Responsive Website</h4>
+                                    <div className={styles.info}>
+                                        <a href="https://github.com/Kyawzint17/camelsrestaurant.git">
+                                            <Image src="/project/github.jpg" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>
+                                        <a href="https://camelscafenrestaurant.vercel.app/">
+                                            <Image src="/project/webicoN.jpg" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>
+                                        <a href="https://drive.google.com/file/d/1FaxWPM_lxFbQt6V_j5IJOTxAg74-NbVV/view?usp=sharing">
+                                            <Image src="/project/report.png" width={60} height={60} className={styles.infoCircle}/>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.projectContainer}>
+                                <div className={styles.imageWrapper}>
+                                    <Image 
+                                        src="/about/abacLogo.jpg" 
+                                        alt="Scholarship Working Hours" 
+                                        className={styles.projectImage}
+                                        layout="fill" 
+                                        objectFit="cover"
+                                    />
+                                </div>
+                                <div className={styles.projectInfo}>
+                                    <h2>Scholarship Working Hours</h2>
+                                    <h3>Tracking Scholarship Hours</h3>
+                                    <h4>Non-Responsive Website</h4>
+                                    <div className={styles.info}>
+                                        <a href="https://github.com/Kyawzint17/scholarshiprogram.git">
+                                            <Image src="/project/github.jpg" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>
+                                        <a href="https://drive.google.com/file/d/1f8mZLcD0oIw9KWskfcC0YgbttAJhI479/view?usp=sharing">
+                                            <Image src="/project/report.png" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.projectContainer}>
+                                <div className={styles.imageWrapper}>
+                                    <Image 
+                                        src="/userHome/K.png" 
+                                        alt="Camels Cafe & Restaurant" 
+                                        className={styles.projectImage}
+                                        layout="fill" 
+                                        objectFit="cover"
+                                    />
+                                </div>
+                                <div className={styles.projectInfo}>
+                                    <h2>My Profile Portfolio</h2>
+                                    <h4>Responsive Website</h4>
+                                    <div className={styles.info}>
+                                        <a href="https://github.com/Kyawzint17/myprofileportfolio.git">
+                                            <Image src="/project/github.jpg" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>
+                                        <a href="https://myprofileportfolio.vercel.app/">
+                                            <Image src="/project/webicoN.jpg" width={60} height={60} className={styles.infoCircle}/>
+                                        </a>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
                 
