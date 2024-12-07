@@ -123,33 +123,6 @@
     }
 }
 
-@media (max-width: 2560px) {
-    .topArrow{
-        margin-left: 200px;
-    }
-    .navContent {
-        margin-left: 150px; /* Adjust margin to reduce space */
-    }
-
-    .buttonContainer {
-        margin-left: 550px; /* Adjust button container spacing */
-    }
-
-    .button {
-        font-size: 25px; /* Decrease font size */
-        padding: 8px 16px; /* Adjust padding */
-    }
-
-    .iconContainer {
-        margin-left: 400px; /* Adjust icon container spacing */
-    }
-
-    .SIcon, .SIcon1 {
-        width: 25px; /* Reduce icon size */
-        height: 25px; /* Adjust icon height */
-    }
-}
-
 @media (max-width: 1440px) {
     .navContent {
         margin-left: 150px; /* Adjust margin to reduce space */
