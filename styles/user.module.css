@@ -125,9 +125,9 @@
     transition: opacity 0.3s ease;
 }
 
-.fixedArrow:hover {
+/* .fixedArrow:hover {
     opacity: 0.7;
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
