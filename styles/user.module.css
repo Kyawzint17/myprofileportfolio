@@ -1184,3 +1184,89 @@
         transform: scale(1.02); /* Smaller scale on hover */
     }
 } 
+
+/* Menu Implementation */
+
+.menuIcon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+/* Styles for the menu container */
+
+.menu {
+    position: fixed; /* Ensure the menu is positioned relative to the parent */
+    top: 0; /* Adjust this value based on the height of the menu icon */
+    left: 0; /* Align the menu to the left */
+    width: 100%; /* Make the menu full width or adjust as needed */
+    background-color: #3583F9; /* Background color of the menu */
+     /* Optional: Add a border: 1px solid #ccc; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+     /* Ensure the menu appears above other elements */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add padding for inner spacing */
+    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+.menu.open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+ /* Style for menu items */
+ .menu ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start */
+    gap: 10px; /* Add spacing between items */
+}
+
+/* Style for individual menu links */
+.menu a {
+    display: block; /* Ensure each link behaves like a block-level element */
+    padding: 10px 15px; /* Add padding for clickable area */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px;
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+.menu a:hover {
+    background-color: #555555; /* Add a hover background */
+    border-radius: 4px; /* Optional: Round corners */
+}
+
+/* Hide the menu initially */
+.menu.hidden {
+    transform: translateY(-100%); /* Hide the menu above the view */
+}
+
+/* Show the menu */
+.menu.visible {
+    transform: translateY(0); /* Bring the menu into view */
+}
+  
+@media (max-width: 768px) {
+    .menuIcon {
+      display: block;
+      margin-right: 35px;
+    }   
+}
+
+@media (max-width: 425px) {
+    .menuIcon {
+      display: block;
+      margin-right: -4px;
+    }   
+}
