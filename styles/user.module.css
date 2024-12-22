@@ -278,8 +278,8 @@
     border: 5px solid #0977CE; /* Blue border */
     border-radius: 50px; /* Rounded corners */
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center horizontally */
+    flex-direction: column; 
+    align-items: center;
     justify-content: center; /* text-align: center; Center vertically */
 }
 
@@ -467,44 +467,44 @@
     }
 
     .Stitle {
-        font-size: 18px; /* Further reduce font size */
+        font-size: 18px; 
         margin-bottom: 1px; /* Keep it compact */
         gap: 15px; /* Adjust spacing */
-        margin-right: 20px; /* Remove margin-right */
+        margin-right: 20px; 
     }
 
     .Stitle1 {
-        font-size: 18px; /* Further reduce font size */
+        font-size: 18px; 
         margin-bottom: 1px; /* Keep it compact */
         gap: 15px; /* Adjust spacing */
-        margin-right: 50px; /* Remove margin-right */
+        margin-right: 50px; 
     }
 
     .SIcon {
-        width: 30px; /* Smaller icon size */
-        height: 30px; /* Adjust height */
+        width: 30px; 
+        height: 30px; 
     }
 
     .SIcon1 {
-        width: 30px; /* Smaller icon size */
-        height: 30px; /* Adjust height */
+        width: 30px;
+        height: 30px; 
     }
 
     .Sparagraph {
-        font-size: 14px; /* Smaller text */
+        font-size: 14px; 
         max-width: 90%; /* Use available space */
     }
 
     .Stitle, .Stitle1 h3 {
-        font-size: 14.5px; /* Adjust heading size */
+        font-size: 14.5px; 
     }
 
     .skillIntro h2 {
-        font-size: 16px; /* Adjust heading size */
+        font-size: 16px; 
     }
 
     .skillIntro p {
-        font-size: 25px; /* Smaller paragraph size */
+        font-size: 25px; 
     }
 }
 
@@ -593,7 +593,7 @@
 /* Container for tech icons */
 .techSet {
     display: flex; /* Arrange tech icons in a row */
-    gap: 20px; /* Space between each tech icon */
+    gap: 20px; 
     justify-content: flex-start; /* Align items to the left */
      /* overflow-x: auto; Enable horizontal scrolling if content overflows */
     padding: 10px; /* Add some padding inside the container */
@@ -603,7 +603,7 @@
 
 .techSet2 {
     display: flex; /* Arrange tech icons in a row */
-    gap: 20px; /* Space between each tech icon */
+    gap: 20px; 
     justify-content: flex-start; /* Align items to the left */
      /* overflow-x: auto; Enable horizontal scrolling if content overflows */
     padding: 10px; /* Add some padding inside the container */
@@ -801,7 +801,7 @@
 
     .techIcon1 div,
     .techIcon2 div {
-        font-size: 0.8rem; /* Further reduce font size for small screens */
+        font-size: 0.8rem; 
     }
 }
 
@@ -954,13 +954,13 @@
     }
 
     .projectContainer {
-        width: 370px; /* Slightly larger project container size */
-        height: 370px; /* Slightly larger project container height */
+        width: 370px; 
+        height: 370px; 
     }
 
     .projectInfo {
-        width: 350px; /* Slightly larger info box */
-        height: 300px; /* Adjust height to match the larger container */
+        width: 350px; 
+        height: 300px; 
     }
 
     .projectInfo h2 {
@@ -981,22 +981,22 @@
     }
 
     .infoCircle {
-        width: 50px; /* Slightly larger icon size */
+        width: 50px; 
         height: 50px;
     }
 
     /* Optionally, adjust other elements for large screens */
     .Ptitle {
-        font-size: 45px; /* Larger font size for titles, but not too large */
+        font-size: 45px;
     }
 
     .moreInfo {
-        font-size: 28px; /* Slightly larger font size for more info */
+        font-size: 28px; 
         gap: 20px;
     }
 
     .projectS {
-        gap: 45px; /* Larger gap between project containers */
+        gap: 45px; 
     }
 }
 
@@ -1005,11 +1005,11 @@
     .projectIntro{
         flex-direction: row; /* Ensure the items stay in the same line */
         justify-content: space-between; /* Distribute the space evenly between items */
-        gap: 10px; /* Reduce the gap for smaller screens */
+        gap: 10px; 
     }
 
     .Ptitle {
-        font-size: 30px; /* Slightly smaller font size for better fit */
+        font-size: 30px; 
     }
 
     .moreInfo {
@@ -1025,11 +1025,11 @@
     }
 
     .Ptitle {
-        font-size: 30px; /* Smaller font size for titles */
+        font-size: 30px; 
     }
 
     .moreInfo {
-        font-size: 20px; /* Smaller font size for more info */
+        font-size: 20px; 
         justify-content: center;
         gap: 10px;
     }
@@ -1039,12 +1039,12 @@
     }
 
     .projectContainer {
-        width: 300px; /* Smaller project container size */
+        width: 300px; 
         height: 300px; 
     }
 
     .projectInfo {
-        width: 250px; /* Smaller info box */
+        width: 250px; 
         height: 200px;
     }
 
@@ -1073,7 +1073,7 @@
 
 @media (max-width: 768px) {
     .projectIntro {
-        gap: 10px; /* Even smaller gap */
+        gap: 10px; 
         flex-direction: column;
     }
 
@@ -1133,7 +1133,7 @@
     }
 
     .Ptitle {
-        font-size: 30px; /* Smaller title font for very small screens */
+        font-size: 30px; 
     }
 
     .githubCircle {
@@ -1200,15 +1200,15 @@
 
 .menu {
     position: fixed; /* Ensure the menu is positioned relative to the parent */
-    top: 0; /* Adjust this value based on the height of the menu icon */
-    left: 0; /* Align the menu to the left */
-    width: 100%; /* Make the menu full width or adjust as needed */
-    background-color: #3583F9; /* Background color of the menu */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #3583F9; 
      /* Optional: Add a border: 1px solid #ccc; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
      /* Ensure the menu appears above other elements */
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     padding: 10px; /* Add padding for inner spacing */
     transition: transform 0.3s ease; /* Smooth transition for opening/closing */
 }
@@ -1225,9 +1225,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
+    flex-direction: column; 
     align-items: flex-start; /* Align items to the start */
-    gap: 10px; /* Add spacing between items */
+    gap: 10px; 
 }
 
 /* Style for individual menu links */
@@ -1236,7 +1236,7 @@
     padding: 10px 15px; /* Add padding for clickable area */
     cursor: pointer; /* Show pointer cursor on hover */
     font-size: 16px;
-    color: #ffffff; /* Text color */
+    color: #ffffff; 
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
@@ -1244,7 +1244,7 @@
 /* Hover effect for links */
 .menu a:hover {
     background-color: #555555; /* Add a hover background */
-    border-radius: 4px; /* Optional: Round corners */
+    border-radius: 4px;
 }
 
 /* Hide the menu initially */
