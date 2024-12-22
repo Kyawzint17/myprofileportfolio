@@ -10,6 +10,7 @@ export default function userHome() {
 
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         // Restore scroll position from session storage
@@ -59,6 +60,14 @@ export default function userHome() {
         }, 15);
     };
 
+    const toggleMenu = () => {
+        setMenuOpen((prev) => !prev);
+      };
+    
+    const onLinkClick = () => {
+        setMenuOpen(false);
+    };
+    
     return (
         <>
             <Head>
@@ -67,6 +76,21 @@ export default function userHome() {
             </Head>
             <UserNavbar className={isNavbarVisible ? nav.navVisible : nav.navHidden} />
             <div className={styles.background}>
+
+            <div className={`${styles.menuIcon} ${isMenuOpen ? "" : "hidden"}`} onClick={toggleMenu}>
+                <Image src="/userHome/Menu.png" alt="Menu" width={70} height={70} />
+            </div>
+
+                {isMenuOpen && (
+                    <div className={`${styles.menu} ${isMenuOpen ? "visible" : "hidden"}`}>
+                        <ul>
+                            <a href="#about" onClick={onLinkClick}>About</a>
+                            <a href="#skills" onClick={onLinkClick}> Skills</a>
+                            <a href="#projects" onClick={onLinkClick}> Projects</a>
+                        </ul>
+                    </div>
+                )}
+                
                 <Image
                     src="/userHome/topArrow.png" /* Replace with your actual image path */
                     alt="Scroll to top"
