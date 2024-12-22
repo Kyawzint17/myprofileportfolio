@@ -1199,7 +1199,7 @@
 /* Styles for the menu container */
 
 .menu {
-    position: fixed; /* Ensure the menu is positioned relative to the parent */
+    position: absolute; /* Ensure the menu is positioned relative to the parent */
     top: 0; 
     left: 0; 
     width: 100%; 
