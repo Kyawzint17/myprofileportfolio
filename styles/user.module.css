@@ -950,7 +950,11 @@
         margin-top: 10px;
         text-align: center;
     }
-
+    
+    .me div {
+        font-size: 14px;
+    }
+    
     .me p {
         font-size: 12px;
     }
