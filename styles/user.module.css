@@ -660,8 +660,12 @@
         max-width: 90%; /* Use available space */
     }
 
-    .Stitle, .Stitle1 h3 {
+    .Stitle h3 {
         font-size: 14px; 
+    }
+
+    .Stitle1 h3 {
+        font-size: 15px;
     }
 
     .skillIntro h2 {
@@ -954,7 +958,7 @@
     .me div {
         font-size: 14px;
     }
-    
+
     .me p {
         font-size: 12px;
     }
