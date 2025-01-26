@@ -28,7 +28,7 @@
 .navContent {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .topArrow {
@@ -125,7 +125,7 @@
 
 @media (max-width: 2560px) {
     .navContent {
-        margin-left: 800px; /* Adjust margin to reduce space */
+        margin-left: 400px; /* Adjust margin to reduce space */
     }
 
     .buttonContainer {
