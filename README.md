@@ -1,2 +1,2 @@
 # myprofileportfolio
-My showcases about my skills, education and myself.
+My showcases about my profile, skills, and projects.
